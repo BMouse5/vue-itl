@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: normal; 
+    src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: bold; /* Для жирного шрифта */
+    src: url('./assets/fonts/OpenSans-Bold.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: 600;
+    src: url('./assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+:root {
+    --btn-green: #4CAF50;
+    --btn-gray: #737373;
+    --btn-brown: #4E3000;
+    --btn-red: #EC5937;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--btn-brown);
+}
+
+label {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    color: var(--btn-brown);
+    font-size: 20px;
+}
+
+input[type="text"] {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    height: 53px;
+    border: none;
+    box-shadow: 0px 1px 4px 0px #00000029;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.title {
+    color: var(--btn-brown);
+}
+
+.present {
+    color: var(--btn-green);
+}
+
+.missing {
+    color: var(--btn-red);
+}
+
+.btn {
+    width: 273px;
+    height: 52px;
+    color: white;
+    box-shadow: 0px 3px 3px 0px #00000029;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn-gray {
+    background-color: var(--btn-gray);
+}
+
+.btn-green {
+    background-color: var(--btn-green);
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-main {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-peoples {
+    text-align: right;
+}
+
+.navbar-peoples h3 {
+    margin: 0;
+}
+
+.navbar-logo {
+    max-width: 187px;
+    width: 100%;
+    height: 89px;
+}
+
+.navbar-logo img {
+    width: 100%;
+}
+
+.navbar-input {
+    max-width: 394px;
+    width: 100%;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    font-family: 'OpenSans', sans-serif;
+    color: var(--btn-brown);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+tr {
+    cursor: pointer;
+}
+
+.circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+.green {
+    background-color: var(--btn-green);
+}
+  
+.red {
+    background-color: var(--btn-red);
+}
+
+th:nth-child(1) {
+    width: 200px; 
+}
+
+th:nth-child(2) {
+    width: 400px;
+}
+
+th:nth-child(3) {
+    width: 250px;
+}
+
+th:nth-child(4) {
+    width: 400px;
+}
+
+th:nth-child(5) {
+    text-align: center;
+}
+
+td:last-child {
+    width: 200px;
+    text-align: center;
+}
+
+.close-wrapp {
+    height: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--btn-gray);
+    border-radius: 50px;
+    color: white;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* затемнение фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.popup form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    row-gap: 15px;
+}
+  
+.popup input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.popup input[type="text"] {
+    max-width: 300px;
+    width: 100%;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    max-width: 310px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+select {
+    max-width: 311px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 1px 4px 0px #00000029;
+    height: 52px;
+    border-radius: 10px;
+    text-decoration: none;
+    appearance: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    max-width: 90%;
+    width: 100%;
+    padding: 30px;
+    margin-top: 22vw;
+}
+
+.filters-title {
+    display: flex;
+    max-width: 60%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters-title h3 {
+    max-width: 40%;
+    width: 100%;
+}
+
+.filters-value {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    row-gap: 30px;
+}
+
+.value {
+    border: none;
+    color: var(--btn-brown);
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background: var(--btn-gray);
+    color: white;
+}
